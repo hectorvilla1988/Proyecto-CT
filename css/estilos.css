@@ -1,0 +1,71 @@
+.intro{
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    font-weight: bold;
+    color: #25a2b7;
+    padding-top: 0.5rem;
+}
+@keyframes aparecer{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0,5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+.text-center{
+    padding: 0.5rem;
+}
+
+.col h3{
+    text-align: center;
+}
+
+.text-justify{
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+@keyframes aparecer{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0,5;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+.col{
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+@keyframes aparecer{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0,5;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+.btn btn-warning{
+    position: absolute;
+    align-items: center;
+}
+
+.card-body{
+background-color: rgba(37, 162, 183, 0.5rem);
+}
+
+.container .col{
+    border: royalblue;
+    padding-left: 1rem;
+}
