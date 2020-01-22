@@ -56,16 +56,4 @@
       opacity: 1;
     }
 }
-.btn btn-warning{
-    position: absolute;
-    align-items: center;
-}
 
-.card-body{
-background-color: rgba(37, 162, 183, 0.5rem);
-}
-
-.container .col{
-    border: royalblue;
-    padding-left: 1rem;
-}
