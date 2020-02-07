@@ -57,3 +57,8 @@
     }
 }
 
+.botonesR{
+  position: absolute;
+  width: 34%;
+  margin: auto;
+}
