@@ -1,13 +1,15 @@
 <?php
-$destino= "ceciliatirado@plenamente.com.pe"
 
-$nombre = $_GET["nombre"]
-$correo = $_GET["correo"]
-$telefono = $_GET["telefono"]
-$mensaje = $_GET["mensaje"]
-$contenido = "Nombre: ".$nombre. "\nCorreo:" .$correo . "\nTelefono": " .$telefono . "\nMensaje:" .$mensaje;
+$destino= "ceciliatirado@plenamente.com.pe";
+$nombre = $_POST ["nombre"];
+$correo = $_POST["correo"];
+$telefono = $_POST["telefono"];
+$mensaje = $_POST["mensaje"];
+
+$contenido = "Nombre: " .$nombre. "\nCorreo:" .$correo. "\nTeléfono:" .$telefono. "\nMensaje:" .$mensaje;
 
 mail($destino, "Contacto", $contenido);
-header("Location:mensaje.html");
+
+header("Location:mensaje.html")
 
 ?>
