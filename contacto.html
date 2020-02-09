@@ -4,71 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacto - Cecilia Tirado</title>
+    <title>Inicio - Cecilia Tirado</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
+
+<nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top" >
     <a href="index.html" class="navbar-brand">Cecilia Tirado - Psiquiatra</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="navbar-item"><a href="index.html" class="nav-link">Inicio</a>
-            </li>
-            <li class="navbar-item"><a href="servicios.html" class="nav-link">Servicios</a>
-            </li>
-            <li class="navbar-item"><a href="plenamente.html" class="nav-link">PlenaMente</a>
-            </li>
-            <li class="navbar-item"><a href="sobremi.html" class="nav-link">Sobre Mi</a>
-            </li>
-            <li class="navbar-item"><a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="navbar-item"><a href="contacto.html" class="nav-link">Contacto</a>
-            </li>
-        </ul>
-    </div>
-  </nav>
-<body class="container">
-  <h1 class="text-center">Contacto</h1>
-<div class="container">
-        <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Correo</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputName">Nombre</label>
-                    <input type="text" class="form-control" id="inputName">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress">Dirección</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234, Lima - Perú">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">Distrito</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                <button type="submit" class="btn btn-primary" class="btn-block">Enviar</button>
-              </form>
-
-
-</div>
-
-<div class="card text-center">
-  <div class="card-body">
-    <p class="card-text">Contacto: benildeth@gmail.com<br>
-    Teléfono: (51) 938 134 801 <br>
-    Dirección: Jr. Hermilio Valdizán 648, Jesús María<br>
-    Lima, Perú</p>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+          <li class="navbar-item"><a href="index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="navbar-item"><a href="servicios.html" class="nav-link">Servicios</a>
+          </li>
+          <li class="navbar-item"><a href="plenamente.html" class="nav-link">PlenaMente</a>
+          </li>
+          <li class="navbar-item"><a href="sobremi.html" class="nav-link">Sobre Mi</a>
+          </li>
+          <li class="navbar-item"><a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="navbar-item"><a href="contacto.html" class="nav-link">Contacto</a>
+          </li>
+      </ul>
   </div>
-        <div class="card-footer text-muted">
-          Desarrollado por Héctor Villa León
-        </div>
-      </div>
+</nav>
+
+<body class="container"> 
+    <form action="procesar.php" method="GET">
+        <h2 class="contacto">Contacto</h2>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="correo" placeholder="Correo" required>
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+            <textarea name="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+            <input type="submit" value="ENVIAR" id="boton">
+    </form>
+
+    <div class="card text-center">
+            <div class="card-body">
+              <p class="card-text">Contacto: benildeth@gmail.com<br>
+              Teléfono: (51) 938 134 801 <br>
+              Dirección: Jr. Hermilio Valdizán 648, Jesús María<br>
+              Lima, Perú</p>
+            </div>
+                  <div class="card-footer text-muted">
+                    Desarrollado por Héctor Villa León
+                  </div>
+                </div>
+          </body>
+          </html>
 </body>
 </html>
