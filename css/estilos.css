@@ -1,3 +1,4 @@
+/* EFECTOS GENERALES */ 
 .intro {
     text-align: center;
     animation-duration: 2s;
@@ -57,21 +58,30 @@
     }
 }
 
-.botonesR{
-  position: absolute;
-  width: 34%;
-  margin: auto;
+.col-12{
+  animation-duration: 2s;
+  animation-name: aparecer;
 }
-
-#container{
-  display: relative;
-  padding: 10px;
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0,5;
+  }
+  100%{
+    opacity: 1;
+  }
 }
-
+ 
+/* LISTA CUADRO DE BLOG */ 
 ul{
   list-style:none
 }
 
+
+
+/* ESTILOS FORMULARIO */
 form{
   width: 450px;
   margin: auto;
