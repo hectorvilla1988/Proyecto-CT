@@ -1,4 +1,8 @@
 /* EFECTOS GENERALES */ 
+.navbar {
+  color: #25a2b7;
+}
+
 .intro {
     text-align: center;
     animation-duration: 2s;
